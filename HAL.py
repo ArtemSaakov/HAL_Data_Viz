@@ -25,6 +25,10 @@ Victim Race: {self.victimRace}
 Victim Sex: {self.victimSex}
 Alleged Offense: {self.allegedOffense}
 '''
+class CensusData:
+
+    def __init__(self):
+        pass
 
 class Node:
 
