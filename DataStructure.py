@@ -1,6 +1,6 @@
 import csv
 import pprint
-from datetime import datetime
+import datetime as dt
 
 pp = pprint.PrettyPrinter(indent=2, sort_dicts=False, width=100)
 
@@ -30,9 +30,19 @@ class HALData:
     self.allegedOffense: victim's alleged offense
     """
 
-    def __init__(self, state, year=None, month=None, day=None, victim=None, county=None, race=None, sex=None, offense=None):
+    def __init__(self, state, year=None, month=0, day=0, victim=None, county=None, race=None, sex=None, offense=None):
+        # checks to see if month or day is valid in order
+        # to properly call datetime function
+        if month.isnumeric() and month != 0:
+            month = int(month)
+        else:
+            month = 1
+        if day.isnumeric() and day != 0:
+            day = int(day)
+        else:
+            day = 1
         self.state = state
-        self.date = datetime(int(year), int(month), int(day))
+        self.date = dt.date(int(year), month, day)
         self.victimName = victim
         self.county = county
         self.victimRace = race
