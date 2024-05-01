@@ -5,10 +5,10 @@ from datetime import datetime
 pp = pprint.PrettyPrinter(indent=2, sort_dicts=False, width=100)
 
 class HALData:
-    '''
-    A class representing an instance of lynching.
+    """
+    a class representing an instance of lynching.
 
-    Parameters
+    parameters
     ------------------------------
 
     state: state where the lynching occurred
@@ -20,7 +20,7 @@ class HALData:
     sex (optional): the lynching victim's sex
     offense (optinoal): the perceived offense the victim committed
 
-    Attributes
+    attributes
     ------------------------------
 
     self.state: state where lynching occurred
@@ -28,7 +28,7 @@ class HALData:
     self.victimName: lynching victim's name
     self.victimSex: victim's sex
     self.allegedOffense: victim's alleged offense
-    '''
+    """
 
     def __init__(self, state, year=None, month=None, day=None, victim=None, county=None, race=None, sex=None, offense=None):
         self.state = state
@@ -40,7 +40,7 @@ class HALData:
         self.allegedOffense  = offense
 
     def __str__(self) -> str:
-        return f'''
+        return f"""
 State: {self.state}
 Date: {self.date}
 Victim Name: {self.victimName}
@@ -48,7 +48,7 @@ County: {self.county}
 Victim Race: {self.victimRace}
 Victim Sex: {self.victimSex}
 Alleged Offense: {self.allegedOffense}
-'''
+"""
 class CensusData:
 
     def __init__(self):
@@ -62,22 +62,62 @@ class Node:
         self.rightChild = None
 
 class DataTree:
-    '''
-    A binary tree to hold the data.
-    '''
+    """
+    a binary tree to hold data.
+
+    parameters
+    ------------------------------
+
+    none
+
+    attributes
+    ------------------------------
+
+    self.root: the root of the data tree
+    """
 
     def __init__(self):
         self.root = None
 
     def insert_node(self, data):
-        node = Node(data)
+            """
+            inserts a new node with the given data into the data structure.
 
-        if self.root == None:
-            self.root = node
-        else:
-            self._insert_node(self.root, node)
+            parameters
+            ------------------------------
+
+            data: the data to be stored in the new node.
+
+            returns
+            ------------------------------
+
+            None
+            """
+            node = Node(data)
+
+            if self.root == None:
+                self.root = node
+            else:
+                self._insert_node(self.root, node)
 
     def _insert_node(self, curNode, newNode):
+        """
+        a helper functin for insert_node. recursively traverses the DataTree to find the appropriate place
+        for the new node.
+
+        parameters
+        ------------------------------
+
+        curNode: the current node being compared
+
+        newNode: the new node being compared with the current node
+
+        returns
+        ------------------------------
+
+        None
+        """
+
         if curNode.data.date > newNode.data.date:
             if curNode.leftChild == None:
                 curNode.leftChild = newNode
@@ -89,8 +129,46 @@ class DataTree:
             else:
                 self._insert_node(curNode.rightChild, newNode)
 
+    def filter(self, attribute, value):
+        """
+        filters the data structure based on the given attribute and value.
+
+        parameters
+        ------------------------------
+
+        attribute: the attribute to filter on
+        value: the value to filter for
+
+        returns
+        ------------------------------
+
+        list: a list of filtered data objects.
+        """
+        def filter_helper(node, attribute, value):
+            if node is None:
+                return []
+            filtered = []
+            if getattr(node.data, attribute) == value:
+                filtered.append(node.data)
+            filtered.extend(filter_helper(node.leftChild, attribute, value))
+            filtered.extend(filter_helper(node.rightChild, attribute, value))
+            return filtered
+        return filter_helper(self.root, attribute, value)
 
     def read_HAL_data(self, file):
+        """
+        reads the lynching data from a CSV file and inserts it into the data structure.
+
+        parameters
+        ------------------------------
+
+        file: the path to the CSV file containing the data.
+
+        returns
+        ------------------------------
+
+        none
+        """
         with open(file, 'r', encoding='UTF-8-SIG') as f:
             reader = csv.DictReader(f)
             for line in reader:
