@@ -141,7 +141,7 @@ class DataTree:
 
     def filter(self, attribute, value):
         """
-        filters the data structure based on the given attribute and value.
+        filters the data structure based on the given attribute and value using a helper function.
 
         parameters
         ------------------------------
@@ -154,14 +154,14 @@ class DataTree:
 
         list: a list of filtered data objects.
         """
+        filtered = []
         def filter_helper(node, attribute, value):
             if node is None:
                 return []
-            filtered = []
             if getattr(node.data, attribute) == value:
                 filtered.append(node.data)
-            filtered.extend(filter_helper(node.leftChild, attribute, value))
-            filtered.extend(filter_helper(node.rightChild, attribute, value))
+            filtered + [filter_helper(node.leftChild, attribute, value)]
+            filtered + [filter_helper(node.rightChild, attribute, value)]
             return filtered
         return filter_helper(self.root, attribute, value)
 
