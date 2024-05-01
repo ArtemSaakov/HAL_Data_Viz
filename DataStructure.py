@@ -5,6 +5,30 @@ from datetime import datetime
 pp = pprint.PrettyPrinter(indent=2, sort_dicts=False, width=100)
 
 class HALData:
+    '''
+    A class representing an instance of lynching.
+
+    Parameters
+    ------------------------------
+
+    state: state where the lynching occurred
+    month (optional): month the lynching occurred
+    day (optional): day the lynching occurred
+    victim (optional): the victim that was lynched
+    county (optional): county the lynching occurred in
+    race (optional): the lynching victim's race
+    sex (optional): the lynching victim's sex
+    offense (optinoal): the perceived offense the victim committed
+
+    Attributes
+    ------------------------------
+
+    self.state: state where lynching occurred
+    self.date: date the lynching occurred
+    self.victimName: lynching victim's name
+    self.victimSex: victim's sex
+    self.allegedOffense: victim's alleged offense
+    '''
 
     def __init__(self, state, year=None, month=None, day=None, victim=None, county=None, race=None, sex=None, offense=None):
         self.state = state
@@ -38,6 +62,9 @@ class Node:
         self.rightChild = None
 
 class DataTree:
+    '''
+    A binary tree to hold the data.
+    '''
 
     def __init__(self):
         self.root = None
@@ -70,14 +97,5 @@ class DataTree:
                 newData = HALData(**line)
                 self.insert_node(newData)
 
-
-
-
-def main():
-
-    tree = DataTree()
-    tree.read_HAL_data("HAL_cleaned.csv")
-    # pp.pprint()
-
 if __name__ == '__main__':
-    main()
+    pass
