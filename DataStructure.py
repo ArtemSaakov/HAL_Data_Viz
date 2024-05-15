@@ -59,10 +59,6 @@ Victim Race: {self.victimRace}
 Victim Sex: {self.victimSex}
 Alleged Offense: {self.allegedOffense}
 """
-class CensusData:
-
-    def __init__(self):
-        pass
 
 class Node:
 
@@ -186,4 +182,7 @@ class DataTree:
                 self.insert_node(newData)
 
 if __name__ == '__main__':
-    pass
+    # pass
+    tree = DataTree()
+    tree.read_HAL_data("data/HAL_cleaned.csv")
+    print(tree.filter('state', 'AL'))
