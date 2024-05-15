@@ -150,14 +150,15 @@ class DataTree:
 
         list: a list of filtered data objects.
         """
-        filtered = []
+
         def filter_helper(node, attribute, value):
             if node is None:
                 return []
+            filtered = []
             if getattr(node.data, attribute) == value:
                 filtered.append(node.data)
-            filtered + [filter_helper(node.leftChild, attribute, value)]
-            filtered + [filter_helper(node.rightChild, attribute, value)]
+            filtered.extend(filter_helper(node.leftChild, attribute, value))
+            filtered.extend(filter_helper(node.rightChild, attribute, value))
             return filtered
         return filter_helper(self.root, attribute, value)
 
@@ -182,7 +183,9 @@ class DataTree:
                 self.insert_node(newData)
 
 if __name__ == '__main__':
-    # pass
-    tree = DataTree()
-    tree.read_HAL_data("data/HAL_cleaned.csv")
-    print(tree.filter('state', 'AL'))
+    pass
+    # tree = DataTree()
+    # tree.read_HAL_data("data/HAL_cleaned.csv")
+    # filtered_data = tree.filter('state', 'AL')
+    # for i in filtered_data:
+    #     pp.pprint(i.victimName)
