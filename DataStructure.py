@@ -4,6 +4,7 @@ import datetime as dt
 
 pp = pprint.PrettyPrinter(indent=2, sort_dicts=False, width=100)
 
+
 class HALData:
     """
     a class representing an instance of lynching.
@@ -25,9 +26,11 @@ class HALData:
 
     self.state: state where lynching occurred
     self.date: date the lynching occurred
-    self.victimName: lynching victim's name
-    self.victimSex: victim's sex
-    self.allegedOffense: victim's alleged offense
+    self.victimName: name of lynching victim
+    self.county: county where lynching occurred
+    self.victimRace: race of lynching victim
+    self.victimSex: sex of lynching victim
+    self.allegedOffense: lynching victim's alleged offense
     """
 
     def __init__(self, state, year=None, month=0, day=0, victim=None, county=None, race=None, sex=None, offense=None):
@@ -50,19 +53,18 @@ class HALData:
         self.allegedOffense  = offense
 
     def __str__(self) -> str:
-        return f"""
-State: {self.state}
-Date: {self.date}
-Victim Name: {self.victimName}
-County: {self.county}
-Victim Race: {self.victimRace}
-Victim Sex: {self.victimSex}
-Alleged Offense: {self.allegedOffense}
-"""
-class CensusData:
+        return (
+                f"""
+                State: {self.state}
+                Date: {self.date}
+                Victim Name: {self.victimName}
+                County: {self.county}
+                Victim Race: {self.victimRace}
+                Victim Sex: {self.victimSex}
+                Alleged Offense: {self.allegedOffense}
+                """
+                )
 
-    def __init__(self):
-        pass
 
 class Node:
 
@@ -70,6 +72,7 @@ class Node:
         self.data = data
         self.leftChild = None
         self.rightChild = None
+
 
 class DataTree:
     """
@@ -88,6 +91,7 @@ class DataTree:
 
     def __init__(self):
         self.root = None
+        self.counties = {}
 
     def insert_node(self, data):
             """
@@ -113,7 +117,7 @@ class DataTree:
     def _insert_node(self, curNode, newNode):
         """
         a helper functin for insert_node. recursively traverses the DataTree to find the appropriate place
-        for the new node.
+        for the new node by comparing dates.
 
         parameters
         ------------------------------
@@ -127,7 +131,7 @@ class DataTree:
 
         None
         """
-
+        self._get_locations(curNode)
         if curNode.data.date > newNode.data.date:
             if curNode.leftChild == None:
                 curNode.leftChild = newNode
@@ -138,6 +142,26 @@ class DataTree:
                 curNode.rightChild = newNode
             else:
                 self._insert_node(curNode.rightChild, newNode)
+
+    def _get_locations(self, node):
+        """
+        a helper function to pull and collect each state and county as nodes
+        are being added to the data tree.
+
+        parameters
+        ------------------------------
+
+        node: the current node being inspected
+
+        returns
+        ------------------------------
+
+        none
+        """
+        if node.data.state and node.data.state not in self.counties.keys():
+            self.counties[node.data.state] = [node.data.county]
+        elif node.data.county and node.data.county not in self.counties[node.data.state]:
+            self.counties[node.data.state].append(node.data.county)
 
     def filter(self, attribute, value):
         """
@@ -187,9 +211,10 @@ class DataTree:
                 self.insert_node(newData)
 
 if __name__ == '__main__':
-    pass
-    # tree = DataTree()
-    # tree.read_HAL_data("data/HAL_cleaned.csv")
+    # pass
+    tree = DataTree()
+    tree.read_HAL_data("data/HAL_cleaned.csv")
+    pp.pprint(tree.counties)
     # filtered_data = tree.filter('state', 'AL')
     # for i in filtered_data:
     #     pp.pprint(i.victimName)
