@@ -1,6 +1,7 @@
 import csv
 import pprint
 import datetime as dt
+import CensusData as cd
 
 pp = pprint.PrettyPrinter(indent=2, sort_dicts=False, width=100)
 

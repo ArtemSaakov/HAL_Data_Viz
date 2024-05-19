@@ -1,6 +1,47 @@
 import requests
 import json
 
+class Counties:
+    """
+    represents the statistics tracked for each county based on the counties in the data tree.
+
+    census data pulled is for the year 2022
+
+    parameters
+    ------------------------------
+
+    state: the state in which the county is located
+    county: the county for which the statistics are being tracked
+    totalLynchings: the total number of lynchings in the county
+    medianIncome: the median income in the county from the census data
+    blackPopulation: the black population in the county from the census data
+    hispanicPopulation: the hispanic population in the county from the census data
+    whitePopulation: the white population in the county from the census data
+    totalPopulation: the total population in the county from the census data
+
+    attributes
+    ------------------------------
+
+    self.state: the state in which the county is located
+    self.county: the county for which the statistics are being tracked
+    self.totalLynchings: the total number of lynchings in the county
+    self.medianIncome: the median income in the county from the census data
+    self.blackPopulation: the black population in the county from the census data
+    self.hispanicPopulation: the hispanic population in the county from the census data
+    self.whitePopulation: the white population in the county from the census data
+    self.totalPopulation: the total population in the county from the census data
+    """
+
+    def __init__(self, state, county, totalLynchings, medianIncome, blackPopulation, hispanicPopulation, whitePopulation, totalPopulation):
+        self.state = state
+        self.county = county
+        self.totalLynchings = totalLynchings
+        self.medianIncome = medianIncome
+        self.blackPopulation = blackPopulation
+        self.hispanicPopulation = hispanicPopulation
+        self.whitePopulation = whitePopulation
+        self.totalPopulation = totalPopulation
+
 class CensusData:
     """
         a class to manage the census data used for the project.
@@ -48,20 +89,18 @@ class CensusData:
         'lat': xxx,'lon': xxx,'censusYear': xxx
 
         """
+        params = {'in': 'state:26', 'key': '', 'for': 'tract:*'}
+        resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B19013_001E', params=params)
+        if resp.status_code != 200:
+            print(f"Error: status_code {resp.status_code}")
+            return
+        resp = resp.json()
+        tract_to_income = {j[2]+j[3]: j[0] for j in resp}
         for district in self.districts:
-            lat = district.randomLat
-            lon = district.randomLong
-            params = {'lat': lat, 'lon': lon, 'censusYear': '2010'}
-            def fetch():
-                while True:
-                    resp = requests.get('https://geo.fcc.gov/api/census/area', params)
-                    if resp.status_code == 200:
-                        return resp.json()
-                    else:
-                        print(f"Error: status_code {resp.status_code}")
-            resp = fetch()
-            district.censusTract = resp['results'][0]['block_fips'][2:-4]
-
+            if int(tract_to_income.get(district.censusTract)) > 0 and tract_to_income.get(district.censusTract):
+                district.medIncome = int(tract_to_income.get(district.censusTract))
+            else:
+                district.medIncome = 0
     def cacheData(self, fileName):
         """
         saves the current state of census data to a file in JSON format.

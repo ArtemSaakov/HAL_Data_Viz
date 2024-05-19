@@ -42,7 +42,7 @@ AL,1896,9,18,John Fitch,Chambers ,Blk,Male,Attempted rape
 AL,1898,10,23,John Anderson,Chambers ,Blk,Male,Murder
 AL,1898,2,13,John Kellogg,Cherokee ,Blk,Male,Attempted rape
 AL,1898,3,20,John Callow,Cherokee ,Blk,Male,Attending white girl
-AL,1885,5,.,Scipio Atchison,Chilton ,Blk,Male,Threats to kill 
+AL,1885,5,.,Scipio Atchison,Chilton ,Blk,Male,Threats to kill
 AL,1889,10,15,James Hickey,Chilton ,Wht,Male,Murder
 AL,1890,3,29,Frank Griffin,Chilton ,Blk,Male,Rape
 AL,1891,8,21,Ray Porter,Chilton ,Blk,Male,Murder
@@ -98,7 +98,7 @@ AL,1913,2,25,Jim Green,Covington ,Blk,Male,Murderous assault
 AL,1918,5,21,John Womack,Covington ,Blk,Male,Attempted rape
 AL,1920,1,15,Jack Waters,Covington ,Blk,Male,Assaulted woman (rape)
 AL,1893,12,27,Mack Segars,Crenshaw ,Blk,Male,Attempted assault (rape)
-AL,1899,8,16,Charles Hurt,Crenshaw ,Blk,Male,Attempted assault (rape)  
+AL,1899,8,16,Charles Hurt,Crenshaw ,Blk,Male,Attempted assault (rape)
 AL,1920,7,29,Sills Spinks,Dale ,Blk,Male,Murderous assault
 AL,1920,7,29,Juster Jennings,Dale ,Blk,Male,Murderous assault
 AL,1882,4,13,Henry Ivy,Dallas ,Blk,Male,Murder
@@ -195,7 +195,7 @@ AL,1896,6,24,Wm. Westmoreland,Lowndes ,Blk,Male,Murder
 AL,1900,3,2,Mrs. Jim Cross,Lowndes ,Blk,Fe,Unknown
 AL,1900,3,2,Daughter of J. Cross,Lowndes ,Blk,Fe,Unknown
 AL,1900,3,2,Son of Jim Cross,Lowndes ,Blk,Male,Unknown
-AL,1900,3,2,Jim Cross,Lowndes ,Blk,Male,Unknown        
+AL,1900,3,2,Jim Cross,Lowndes ,Blk,Male,Unknown
 AL,1914,12,18,Wm. Jones,Lowndes ,Blk,Male,Attempted assault (rape)
 AL,1917,7,24,Will Powell,Lowndes ,Blk,Male,Threat to kill
 AL,1917,7,24,Jesse Powell,Lowndes ,Blk,Male,Threat to kill
@@ -271,7 +271,7 @@ AL,1888,7,13,Frank Stone,St. Clair,Blk,Male,Attempted rape
 AL,1893,2,20,Dick Mays,St. Clair,Blk,Male,Rape
 AL,1896,2,9,Joseph Leeds,St. Clair,Blk,Male,Att. criminal assault (rape)
 AL,1910,9,14,Isaac Glover,St. Clair,Blk,Male,Murder
-AL,1888,7,13,Jim Torney,St. Clair ,Blk,Male,Eloped with white girl 
+AL,1888,7,13,Jim Torney,St. Clair ,Blk,Male,Eloped with white girl
 AL,1901,8,2,Charley Bentley,St. Clair ,Blk,Male,Murder
 AL,1886,7,13,John Renfroe,Sumter ,Wht,Male,Attempted murder
 AL,1894,2,26,Thomas Douglas,Sumter ,Blk,Male,Murder
@@ -336,7 +336,7 @@ AR,1895,7,14,Unnamed Negro,Calhoun,Blk,Male,Murder
 AR,1887,7,25,Wm. Morrison,Carroll,Wht,Male,Child abuse
 AR,1891,7,19,John Farmer,Chicot,Blk,Male,Murder
 AR,1903,11,3,Henry Johnson,Chicot,Blk,Male,Murder
-AR,1921,11,23,Robert Hicks,Chicot,Blk,Male,Writing to white woman  
+AR,1921,11,23,Robert Hicks,Chicot,Blk,Male,Writing to white woman
 AR,1892,8,22,— Bowles,Clark,Blk,Male,Criminal assault (rape)
 AR,1903,4,23,Alexander Thompson,Clark,Blk,Male,Murderous assault
 AR,1887,12,29,Wm. Herring,Clay,Wht,Male,Murder
@@ -349,7 +349,7 @@ AR,1902,7,27,Lee Newton,Columbia,Blk,Male,Attempted rape
 AR,1919,11,11,Jordan Jameson,Columbia,Blk,Male,Murder
 AR,1891,11,7,Wm. Rice,Conway,Blk,Male,Unknown
 AR,1893,4,19,Flannegan Thornton,Conway,Blk,Male,Murder
-AR,1912,7,4,John Williams,Conway,Blk,Male,Murder  
+AR,1912,7,4,John Williams,Conway,Blk,Male,Murder
 AR,1922,12,9,Less Smith,Conway,Blk,Male,Murderous assault
 AR,1920,12,26,Wade Thomas,Craighead,Blk,Male,Murder
 AR,1882,8,25,Frank Lane,Crawford,Wht,Male,Murder
@@ -417,10 +417,10 @@ AR,1887,5,21,Andrew Springer,Lawrence,Unk,Male,Rape
 AR,1883,5,26,Unnamed Negro,Lee,Blk,Male,Arson
 AR,1891,10,1,Edward Peyton,Lee,Blk,Male,Rioting
 AR,1891,10,1,Ben Patterson,Lee,Blk,Male,Rioting
-AR,1892,6,30,Robert Donnelly,Lee,Blk,Male,Rape                   
+AR,1892,6,30,Robert Donnelly,Lee,Blk,Male,Rape
 AR,1900,5,.,John Brodie,Lee,Blk,Male,Murderous assault
 AR,1905,4,17,John Barnett,Lee,Blk,Male,Murder
-AR,1919,10,20,Alexander Wilson,Lee,Blk,Male,Murder  
+AR,1919,10,20,Alexander Wilson,Lee,Blk,Male,Murder
 AR,1892,2,23,George Harris,Lincoln,Blk,Male,Murder
 AR,1893,7,15,John Cotton,Lincoln,Blk,Male,Attempted assault (rape)
 AR,1893,11,13,David Nelson,Lincoln,Blk,Male,Murder
@@ -496,7 +496,7 @@ AR,1885,9,6,— Polk (brother),Pike,Wht,Male,Murder
 AR,1885,9,6,— Polk (brother),Pike,Wht,Male,Murder
 AR,1885,10,20,— Churchill,Pike,Wht,Male,Murder
 AR,1901,2,20,Peter Berryman,Polk,Blk,Male,Assault
-AR,1912,8,19,Monroe Franklin,Pope,Blk,Male,Criminal assault (rape) 
+AR,1912,8,19,Monroe Franklin,Pope,Blk,Male,Criminal assault (rape)
 AR,1909,12,19,George Bailey,Prairie,Blk,Male,Shot man
 AR,1884,9,10,— Orton,Pulaski,Wht,Male,Arson
 AR,1889,12,15,Unnamed White,Pulaski,Wht,Male,Robbery & murder
@@ -514,8 +514,8 @@ AR,1912,3,24,Sanford Lewis,Sebastian,Blk,Male,Murder
 AR,1888,8,24,— Graves,Sevier,Blk,Male,Rape
 AR,1894,5,21,J.H. Webster,St. Francis,Wht,Male,Arresting whitecappers
 AR,1902,10,20,Charles Young,St. Francis,Blk,Male,Rape & murder
-AR,1911,10,16,Nathan Lacey,St. Francis,Blk,Male,Attempted rape   
-AR,1915,12,3,Wm. Patrick,St. Francis,Blk,Male,Murder  
+AR,1911,10,16,Nathan Lacey,St. Francis,Blk,Male,Attempted rape
+AR,1915,12,3,Wm. Patrick,St. Francis,Blk,Male,Murder
 AR,1919,4,23,Samuel McIntyre,St. Francis,Blk,Male,Murder
 AR,1883,10,16,Wyatt Ames,Stone,Blk,Male,Murder
 AR,1898,3,15,Unnamed Negro,Stone,Blk,Male,Burglary
@@ -538,7 +538,7 @@ AR,1910,7,5,Unnamed Negro,White,Blk,Male,Mistaken identity
 AR,1893,8,5,Will McClendon,Woodruff,Blk,Male,Murder
 AR,1911,9,9,Arthur Dean,Woodruff,Blk,Male,Rape & murder
 AR,1883,9,8,John Coker,Yell,Wht,Male,Aiding outlaw
-AR,1883,9,8,Dr.  Flood,Yell,Wht,Male,Aiding outlaw 
+AR,1883,9,8,Dr.  Flood,Yell,Wht,Male,Aiding outlaw
 AR,1888,6,10,— Bryson,Yell,Wht,Male,Attempted rape
 FL,1891,2,17,Michael Kelly,Alachua ,Wht,Male,Complicity in murder
 FL,1891,8,24,Andy Ford,Alachua ,Wht,Male,Desperado
@@ -816,7 +816,7 @@ GA,1923,8,17,Aaron Harris,Bleckley ,Blk,Male,Sexual assault (rape)
 GA,1894,12,22,Samuel Taylor,Brooks ,Blk,Male,Aided murderer
 GA,1894,12,22,Eli Frazer,Brooks ,Blk,Male,Aided murderer
 GA,1894,12,22,Samuel Pike,Brooks ,Blk,Male,Aided murderer
-GA,1894,12,22,Henry Sherod,Brooks ,Blk,Male,Aided murderer  
+GA,1894,12,22,Henry Sherod,Brooks ,Blk,Male,Aided murderer
 GA,1901,1,2,Ed Dodson,Brooks ,Blk,Male,Assault (rape)
 GA,1913,3,2,George McDonald,Brooks ,Blk,Male,Shot at man
 GA,1917,11,9,Jesse Stater,Brooks ,Blk,Male,Insolent letter to woman
@@ -861,7 +861,7 @@ GA,1917,9,18,Rufus Moncrief,Clarke ,Blk,Male,Rape
 GA,1891,6,29,Daniel Buck,Clay ,Blk,Male,"Invaded girl's ""chamber"""
 GA,1893,4,13,Ed —,Clay ,Blk,Male,Murder
 GA,1908,9,22,George Thomas,Clay ,Blk,Male,Murderous assault
-GA,1911,8,29,Will Davis,Clay ,Blk,Male,Murder        
+GA,1911,8,29,Will Davis,Clay ,Blk,Male,Murder
 GA,1893,10,21,Arthur Bennett,Clayton ,Blk,Male,Attempted murder
 GA,1890,6,26,Andrew Robinson,Clinch ,Blk,Male,Attempted rape
 GA,1895,11,9,Lewis Jefferson,Clinch ,Blk,Male,Attempted rape
@@ -897,7 +897,7 @@ GA,1883,10,13,Henry Jenkins,Decatur ,Blk,Male,Rape
 GA,1885,7,29,Thomas K. Brantley,Decatur ,Wht,Male,Wife-beating
 GA,1893,4,7,Unnamed Negro,Decatur ,Blk,Male,Attempted rape
 GA,1893,12,25,Calvin Thomas,Decatur ,Blk,Male,Rape
-GA,1898,5,24,Richard Oliver,Decatur ,Blk,Male,Assaulted woman    
+GA,1898,5,24,Richard Oliver,Decatur ,Blk,Male,Assaulted woman
 GA,1898,9,6,— McFadgen,Decatur ,Blk,Male,Rape
 GA,1903,4,20,Andrew Rainey,Decatur ,Blk,Male,Arson
 GA,1903,9,26,Unnamed Negro,Decatur ,Blk,Male,Assault (rape)
@@ -922,7 +922,7 @@ GA,1895,11,28,Tony Sutton,Dooly ,Wht,Male,Murder
 GA,1897,1,6,Anthony Henderson,Dooly ,Blk,Male,Murder
 GA,1902,9,6,Wm. Mobley,Dooly ,Blk,Male,Sexual Assault (rape)
 GA,1903,10,16,Unnamed Negro,Dooly ,Blk,Male,Unknown
-GA,1912,6,24,Annie Barksdale,Dooly ,Blk,Fe,Murder               
+GA,1912,6,24,Annie Barksdale,Dooly ,Blk,Fe,Murder
 GA,1919,9,22,Ernest Glenwood,Dooly ,Blk,Male,Unknown
 GA,1920,9,25,Unnamed Negro,Dooly ,Blk,Male,Assault
 GA,1885,7,25,Peter Stamps,Douglas ,Blk,Male,Rape
@@ -1011,13 +1011,13 @@ GA,1911,6,18,Lawrence Cranford,Jasper ,Wht,Male,Rape
 GA,1915,1,14,Eula Barber,Jasper ,Blk,Fe,Assault
 GA,1915,1,14,Ella Barber,Jasper ,Blk,Fe,Assault
 GA,1915,1,14,Jesse Barber,Jasper ,Blk,Male,Assault
-GA,1915,1,14,Dan Barber,Jasper ,Blk,Male,Assault       
+GA,1915,1,14,Dan Barber,Jasper ,Blk,Male,Assault
 GA,1919,10,7,Eugene Hamilton,Jasper ,Blk,Male,Attempted murder
 GA,1908,8,25,Vince Williams,Jefferson ,Blk,Male,Murder
 GA,1911,1,23,Wm. Johnson,Jefferson ,Blk,Male,Murder
 GA,1919,4,13,"Joe Ruffin,Jr.",Jenkins ,Blk,Male,Complicity in murder
 GA,1919,4,13,Wm. William,Jenkins ,Blk,Male,Complicity in murder
-GA,1919,4,13,Andrew Ruffin,Jenkins ,Blk,Male,Complicity in murder 
+GA,1919,4,13,Andrew Ruffin,Jenkins ,Blk,Male,Complicity in murder
 GA,1882,9,20,Augustus Knight,Johnson ,Blk,Male,Rape
 GA,1890,3,22,Sim Martin,Johnson ,Blk,Male,Murder
 GA,1903,2,6,Lee Hall,Johnson ,Blk,Male,Murder
@@ -1043,7 +1043,7 @@ GA,1916,1,20,Felix Lake,Lee ,Blk,Male,Murder
 GA,1916,1,20,Frank Lake,Lee ,Blk,Male,Murder
 GA,1916,1,20,Dewey Lake,Lee ,Blk,Male,Murder
 GA,1916,1,20,Major Lake,Lee ,Blk,Male,Murder
-GA,1916,1,20,John Seymour,Lee ,Blk,Male,Murder    
+GA,1916,1,20,John Seymour,Lee ,Blk,Male,Murder
 GA,1919,12,21,Charles West,Lee ,Blk,Male,Murder
 GA,1892,8,23,Benjamin Howard,Liberty ,Blk,Male,Shooting man
 GA,1922,7,1,James Harvey,Liberty ,Blk,Male,Criminal assault (rape)
@@ -1076,7 +1076,7 @@ GA,1913,8,25,Virgil Swanson,Meriwether ,Blk,Male,Aided murderer
 GA,1924,4,3,Beach Thrash,Meriwether ,Blk,Male,Murder
 GA,1883,8,29,Frank Fountain,Miller,Blk,Male,Attempted rape
 GA,1922,7,14,Jake Davis,Miller,Blk,Male,Miscegenation
-GA,1883,8,14,Joseph Fulford,Miller ,Wht,Male,Murder        
+GA,1883,8,14,Joseph Fulford,Miller ,Wht,Male,Murder
 GA,1883,8,14,Harry Bradley,Miller ,Blk,Male,Murder
 GA,1883,8,14,Reuben Robinson,Miller ,Blk,Male,Murder
 GA,1883,8,26,Lewis Warren,Miller ,Blk,Male,Attempted rape
@@ -1171,7 +1171,7 @@ GA,1915,6,14,Samuel Stephens,Stephens ,Blk,Male,Assault (rape)
 GA,1898,8,20,Unnamed Negro,Sumter ,Blk,Male,Murder
 GA,1913,6,21,Wm. Redding,Sumter ,Blk,Male,Shooting officer
 GA,1904,9,20,Jack Troy,Talbot ,Blk,Male,Race hatred
-GA,1904,9,20,Edward Martin,Talbot ,Blk,Male,Race hatred       
+GA,1904,9,20,Edward Martin,Talbot ,Blk,Male,Race hatred
 GA,1909,6,19,Joseph Hardy,Talbot ,Blk,Male,Incendiarism
 GA,1909,6,22,Wm. Carroker,Talbot ,Blk,Male,Murder
 GA,1921,1,6,Samuel Williams,Talbot ,Blk,Male,Unknown
@@ -1255,12 +1255,12 @@ KY,1901,9,12,Frank Howard,Ballard,Blk,Male,Murder
 KY,1901,9,12,Samuel Feed,Ballard,Blk,Male,Murder
 KY,1901,9,12,Ernest Harris,Ballard,Blk,Male,Murder
 KY,1903,10,16,Thomas Hall,Ballard,Blk,Male,Shooting boy
-KY,1915,1,12,Peter Hart,Ballard,Blk,Male,Race prejudice 
+KY,1915,1,12,Peter Hart,Ballard,Blk,Male,Race prejudice
 KY,1898,6,16,Caleb Gaines,Barren,Blk,Male,Attempted rape
 KY,1889,6,22,Tony Cravasso,Bell,Wht,Male,Murder
 KY,1889,6,22,— Cravasso (brother),Bell,Wht,Male,Murder
 KY,1891,7,17,Frank Rossimus,Bell,Wht,Male,Attempted murder
-KY,1897,4,12,Wilber Boyden,Bell,Unk,Male,Murder 
+KY,1897,4,12,Wilber Boyden,Bell,Unk,Male,Murder
 KY,1898,12,14,Pleas Goin,Bell,Wht,Male,Murder
 KY,1884,5,4,Charles Dickerson,Boone,Blk,Male,Burglary
 KY,1885,9,11,Sam Scales,Boone,Wht,Male,Rape
@@ -1310,7 +1310,7 @@ KY,1924,10,26,Frederick Shannon,Floyd,Blk,Male,Murder
 KY,1894,8,14,Marshall Boston,Franklin,Blk,Male,Rape
 KY,1909,6,3,John Maxey,Franklin,Blk,Male,Murderous assault
 KY,1883,6,10,Henry Colbert,Fulton,Blk,Male,Attempted rape
-KY,1888,3,15,Eli Nary,Fulton,Blk,Male,Barn-burning 
+KY,1888,3,15,Eli Nary,Fulton,Blk,Male,Barn-burning
 KY,1895,9,2,Wm. Butcher,Fulton,Blk,Male,Assault
 KY,1899,6,27,Henry Stewart,Fulton,Blk,Male,Robbery & assault
 KY,1899,8,19,John Bolin,Fulton,Blk,Male,Murder & robbery
@@ -1380,7 +1380,7 @@ KY,1895,11,23,Unnamed Negro,Marshall,Blk,Male,Train wrecking
 KY,1899,12,6,Richard Coleman,Mason,Blk,Male,Murder
 KY,1889,5,20,Joseph Thornton,McCracken,Blk,Male,Rape
 KY,1892,6,9,Charles Hill,McCracken,Blk,Male,Assault (rape)
-KY,1916,10,16,Luther Durrett,McCracken,Blk,Male,Criticized mob  
+KY,1916,10,16,Luther Durrett,McCracken,Blk,Male,Criticized mob
 KY,1916,10,16,Brack Kinley,McCracken,Blk,Male,Rape
 KY,1911,4,20,Wm. Potter,McLean,Blk,Male,Murder
 KY,1902,4,30,Ernest Dewley,Meade,Blk,Male,Murderous assault
@@ -1435,7 +1435,7 @@ KY,1902,1,11,James Mayes,Washington,Blk,Male,Attempted rape
 KY,1896,2,15,Fount Martin,Wayne,Unk,Male,Barn-burning
 KY,1908,5,31,Jake McDowell,Webster,Blk,Male,Murderous assault
 KY,1883,11,10,James Truxtill,Whitley,Wht,Male,Rape
-KY,1894,1,21,M. G. Gamble,Whitley,Blk,Male,Rape   
+KY,1894,1,21,M. G. Gamble,Whitley,Blk,Male,Rape
 KY,1897,8,22,Elkanah Sullivan,Whitley,Wht,Male,Murderous assault
 KY,1890,8,21,John Henderson,Woodford,Blk,Male,Murder
 KY,1921,3,13,Richard James,Woodford,Blk,Male,Murder
@@ -1449,7 +1449,7 @@ LA,1892,9,5,Gabriel Magliore,Avoyelles ,Blk,Male,Threats to kill
 LA,1907,4,16,Charles Straus,Avoyelles ,Blk,Male,Attm. criminal assault (rape)
 LA,1915,7,15,Thomas Collins,Avoyelles ,Blk,Male,Murderous assault
 LA,1886,12,28,"John Elia, Jr.",Bienville ,Wht,Male,Murder
-LA,1891,5,21,Tennis Hampton,Bienville ,Blk,Male,Murder      
+LA,1891,5,21,Tennis Hampton,Bienville ,Blk,Male,Murder
 LA,1891,9,8,Unnamed Negro,Bienville ,Blk,Male,Rape
 LA,1892,3,26,Dennis Cobb,Bienville ,Blk,Male,Unknown
 LA,1892,5,28,— Walker,Bienville ,Blk,Male,Improper with white girl
@@ -1476,7 +1476,7 @@ LA,1900,4,21,John Humely,Bossier ,Blk,Male,Plot to kill
 LA,1900,4,21,Edward Amos,Bossier ,Blk,Male,Plot to kill
 LA,1901,5,1,Grant Johnson,Bossier ,Blk,Male,Murder
 LA,1901,6,19,Frank Smith  ,Bossier ,Blk,Male,Complicity in murder
-LA,1901,6,19,F. D. McLand,Bossier ,Blk,Male,Complicity in murder   
+LA,1901,6,19,F. D. McLand,Bossier ,Blk,Male,Complicity in murder
 LA,1901,11,24,Frank Thomas,Bossier ,Blk,Male,Murder
 LA,1903,2,24,Jim Brown,Bossier ,Blk,Male,Attempted murder
 LA,1903,3,27,Frank Robertson,Bossier ,Blk,Male,Arson
@@ -1503,10 +1503,10 @@ LA,1906,5,22,Thomas Jackson,Caddo ,Blk,Male,Robbery
 LA,1908,7,26,Andrew Harris,Caddo ,Blk,Male,Attempted rape
 LA,1909,11,27,Simmie Thomas,Caddo ,Blk,Male,Attempted rape
 LA,1912,4,9,Thomas Miles,Caddo ,Blk,Male,Insulted white woman
-LA,1913,2,14,Charles Tyson,Caddo ,Blk,Male,Unknown    
+LA,1913,2,14,Charles Tyson,Caddo ,Blk,Male,Unknown
 LA,1913,12,16,Ernest Williams,Caddo ,Blk,Male,Murder
 LA,1913,12,16,Frank Williams,Caddo ,Blk,Male,Murder
-LA,1914,5,12,Earl Hamilton,Caddo ,Blk,Male,Assault (rape)   
+LA,1914,5,12,Earl Hamilton,Caddo ,Blk,Male,Assault (rape)
 LA,1914,12,2,Jobie Lewis,Caddo ,Blk,Male,Murder & arson
 LA,1914,12,2,Elijah Durden,Caddo ,Blk,Male,Murder & arson
 LA,1914,12,11,Charles Washington,Caddo ,Blk,Male,Murder & robbery
@@ -1545,7 +1545,7 @@ LA,1908,6,4,Bird Cooper,Claiborne ,Blk,Male,Murder
 LA,1911,7,24,Miles Taylor,Claiborne ,Blk,Male,Murder
 LA,1889,11,16,Ed Gray,Concordia ,Blk,Male,Arson
 LA,1891,12,27,Unnamed Negro,Concordia ,Blk,Male,Murder
-LA,1892,9,27,Benny Walkers,Concordia ,Blk,Male,Entered woman's room      
+LA,1892,9,27,Benny Walkers,Concordia ,Blk,Male,Entered woman's room
 LA,1894,9,10,Robert Williams,Concordia ,Blk,Male,Murder
 LA,1894,12,28,Scott Sherman,Concordia ,Blk,Male,Mistaken identity
 LA,1902,3,19,John Woodward,Concordia ,Blk,Male,Murder
@@ -1594,9 +1594,9 @@ LA,1892,3,27,Jack Tillman,Jefferson ,Blk,Male,Arguing with white men
 LA,1892,9,7,Henry Dixon,Jefferson ,Blk,Male,Theft
 LA,1893,9,16,Valsin Julian,Jefferson ,Blk,Male,Complicity in murder
 LA,1893,9,16,Paul Julian,Jefferson ,Blk,Male,Complicity in murder
-LA,1893,9,16,Basile Julian,Jefferson ,Blk,Male,Complicity in murder   
+LA,1893,9,16,Basile Julian,Jefferson ,Blk,Male,Complicity in murder
 LA,1895,6,24,John Frey,Jefferson ,Wht,Male,Arson
-LA,1895,9,25,Aleck Francis,Jefferson ,Blk,Male,Dangerous character   
+LA,1895,9,25,Aleck Francis,Jefferson ,Blk,Male,Dangerous character
 LA,1896,1,12,Charlotte Morris,Jefferson ,Blk,Fe,Miscegenation
 LA,1896,1,12,Patrick Morris,Jefferson ,Wht,Male,Miscegenation
 LA,1896,9,24,Jim Hawkins,Jefferson ,Blk,Male,Assaulted boy
@@ -1649,12 +1649,12 @@ LA,1891,3,14,Pietro Monasterio,Orleans ,Wht,Male,Conspiracy to murder
 LA,1891,3,14,Frank Romero,Orleans ,Wht,Male,Conspiracy to murder
 LA,1891,3,14,Antonio Marchesi,Orleans ,Wht,Male,Conspiracy to murder
 LA,1891,3,14,Manuel Politz,Orleans ,Wht,Male,Conspiracy to murder
-LA,1891,3,14,James Caruso,Orleans ,Wht,Male,Conspiracy to murder   
-LA,1891,3,14,Rocco Gerachi,Orleans ,Wht,Male,Conspiracy to murder   
-LA,1891,3,14,Charles Traina,Orleans ,Wht,Male,Conspiracy to murder   
-LA,1891,3,14,Loretto Comitz,Orleans ,Wht,Male,Conspiracy to murder   
-LA,1891,3,14,Antonio Bagnetto,Orleans ,Wht,Male,Conspiracy to murder   
-LA,1891,3,14,Antoino Scoffedi,Orleans ,Wht,Male,Conspiracy to murder    
+LA,1891,3,14,James Caruso,Orleans ,Wht,Male,Conspiracy to murder
+LA,1891,3,14,Rocco Gerachi,Orleans ,Wht,Male,Conspiracy to murder
+LA,1891,3,14,Charles Traina,Orleans ,Wht,Male,Conspiracy to murder
+LA,1891,3,14,Loretto Comitz,Orleans ,Wht,Male,Conspiracy to murder
+LA,1891,3,14,Antonio Bagnetto,Orleans ,Wht,Male,Conspiracy to murder
+LA,1891,3,14,Antoino Scoffedi,Orleans ,Wht,Male,Conspiracy to murder
 LA,1893,1,25,Wm. Fisher,Orleans ,Blk,Male,Murder
 LA,1889,4,14,Steve McIntosh,Ouachita,Unk,Male,Outrage of girl
 LA,1896,1,10,Abraham L. Smart,Ouachita,Blk,Male,Murder
@@ -1685,7 +1685,7 @@ LA,1891,6,2,Unnamed Negro,Pointe Coupee ,Blk,Male,Murder
 LA,1892,4,23,— Freeman,Pointe Coupee ,Wht,Male,Murder & robbery
 LA,1894,5,23,George Paul,Pointe Coupee ,Blk,Male,Offended white man
 LA,1905,6,1,Henry Washington,Pointe Coupee ,Blk,Male,Murder
-LA,1908,9,16,John Miles,Pointe Coupee ,Blk,Male,Robbery & assault 
+LA,1908,9,16,John Miles,Pointe Coupee ,Blk,Male,Robbery & assault
 LA,1894,11,9,Unnamed Negro,Rapides ,Blk,Male,Murder
 LA,1894,11,9,Charlie Williams,Rapides ,Other,Male,Murder
 LA,1900,5,12,Henry Harris,Rapides ,Blk,Male,Attm. criminal assault (rape)
@@ -1712,9 +1712,9 @@ LA,1918,2,26,James Jones,Richland ,Blk,Male,Murder
 LA,1918,2,26,Wm. Powell,Richland ,Blk,Male,Murder
 LA,1918,6,18,George Clayton,Richland ,Blk,Male,Murder
 LA,1891,11,27,John Maxey,Sabine ,Blk,Male,Criminal assault (rape)
-LA,1886,5,6,Robert Smith,St. Bernard ,Blk,Male,Murder    
+LA,1886,5,6,Robert Smith,St. Bernard ,Blk,Male,Murder
 LA,1894,12,23,George King,St. Bernard ,Blk,Male,Murderous assault
-LA,1896,5,19,James Dandy,St. Bernard ,Blk,Male,Attempted rape  
+LA,1896,5,19,James Dandy,St. Bernard ,Blk,Male,Attempted rape
 LA,1892,12,28,Lewis Fox,St. Charles ,Blk,Male,Murder
 LA,1892,12,28,Adam Gripson,St. Charles ,Blk,Male,Murder
 LA,1896,8,8,Lorenzo Saladino,St. Charles ,Wht,Male,Murder & robbery
@@ -1741,9 +1741,9 @@ LA,1909,7,30,Onezime Thomas,St. Landry ,Blk,Male,Murder
 LA,1916,11,15,James Grant,St. Landry ,Blk,Male,Murder
 LA,1882,5,15,Joseph E. Jenkins,St. Martin ,Wht,Male,Murder
 LA,1882,5,15,Eugene Azar,St. Martin ,Blk,Male,Murder
-LA,1887,8,11,Daniel Pleasants,St. Mary ,Blk,Male,Murder 
+LA,1887,8,11,Daniel Pleasants,St. Mary ,Blk,Male,Murder
 LA,1896,6,9,Wallis Starks,St. Mary ,Blk,Male,Rape
-LA,1897,7,21,Jack Davis,St. Mary ,Blk,Male,Criminal assault (rape)     
+LA,1897,7,21,Jack Davis,St. Mary ,Blk,Male,Criminal assault (rape)
 LA,1884,12,22,Wm. Fleitas,St. Tammany ,Wht,Male,Murderous assault
 LA,1884,10,24,Unnamed Negro,St. Tammany ,Blk,Male,Murder
 LA,1884,10,24,Unnamed Negro,St. Tammany ,Blk,Male,Murder
@@ -1765,7 +1765,7 @@ LA,1900,9,21,George Beckham,Tangipahoa ,Blk,Male,Robbery
 LA,1900,9,21,Nathaniel Bowman,Tangipahoa ,Blk,Male,Robbery
 LA,1900,9,21,Charles Elliot,Tangipahoa ,Blk,Male,Robbery
 LA,1900,9,21,Iziah Rollins,Tangipahoa ,Blk,Male,Robbery
-LA,1905,11,26,Monroe Williams,Tangipahoa ,Blk,Male,Criminal assault (rape)  
+LA,1905,11,26,Monroe Williams,Tangipahoa ,Blk,Male,Criminal assault (rape)
 LA,1917,2,28,Emma Hooper,Tangipahoa ,Blk,Fe,Murderous assault
 LA,1917,7,29,Daniel Rout,Tangipahoa ,Blk,Male,Murder
 LA,1917,7,29,Jerry Rout,Tangipahoa ,Blk,Male,Murder
@@ -1796,7 +1796,7 @@ LA,1887,12,9,Andrew Edwards,Webster ,Blk,Male,Voodooism
 LA,1894,9,9,Link Waggoner,Webster ,Wht,Male,Murderous assault
 LA,1896,7,11,James Porter,Webster ,Blk,Male,Murder
 LA,1896,7,11,Monch Dudley,Webster ,Blk,Male,Murder
-LA,1898,6,4,Wm. Steake,Webster ,Blk,Male,Attempted assault (rape)   
+LA,1898,6,4,Wm. Steake,Webster ,Blk,Male,Attempted assault (rape)
 LA,1901,1,24,— Larkington,Webster ,Blk,Male,Attm. criminal assault (rape)
 LA,1885,9,30,Sampson Harris,Winn ,Blk,Male,Threating to give evidence
 MS,1888,6,17,Washington Ives,Adams ,Blk,Male,Attempted rape
@@ -1830,7 +1830,7 @@ MS,1904,3,19,Fayette Sawyer,Bolivar ,Blk,Male,Murder
 MS,1904,3,19,Burke Harris,Bolivar ,Blk,Male,Murder
 MS,1905,1,2,Unnamed Negro,Bolivar ,Blk,Male,Attempted assault (rape)
 MS,1905,12,10,James Green,Bolivar ,Blk,Male,Criminal assault (rape)
-MS,1913,7,14,Sam Townes,Bolivar ,Blk,Male,Murder  
+MS,1913,7,14,Sam Townes,Bolivar ,Blk,Male,Murder
 MS,1913,12,10,— Steppins,Bolivar ,Blk,Male,Wounding men
 MS,1914,6,28,Jennie Collins,Bolivar ,Blk,Fe,Complicity in murder
 MS,1930,4,23,David Harris,Bolivar ,Blk,Male,Murder
@@ -1839,7 +1839,7 @@ MS,1886,2,19,Unnamed Negro,Carroll ,Blk,Male,Murder
 MS,1901,8,1,Betsy McCray,Carroll ,Blk,Fe,Implicated in murder
 MS,1901,8,1,Ida McCray,Carroll ,Blk,Fe,Implicated in murder
 MS,1901,8,1,Belford McCray,Carroll ,Blk,Male,Murder
-MS,1901,8,4,Wm. Price,Carroll ,Blk,Male,Complicity in murder      
+MS,1901,8,4,Wm. Price,Carroll ,Blk,Male,Complicity in murder
 MS,1907,10,27,— Myers,Carroll ,Blk,Male,Refused to aid lynch posse
 MS,1904,7,9,Jesse Tucker,Chickasaw ,Blk,Male,Attempted rape
 MS,1907,10,22,Henry Sykes,Chickasaw ,Blk,Male,Obscene phone call
@@ -1916,7 +1916,7 @@ MS,1886,11,25,Unnamed Negro,Franklin ,Blk,Unk,Arson & Theft
 MS,1886,11,25,Unnamed Negro,Franklin ,Blk,Unk,Arson & Theft
 MS,1886,11,25,Unnamed Negro,Franklin ,Blk,Unk,Arson & Theft
 MS,1891,2,13,Wm. Brown,Franklin ,Blk,Male,Criminal assault (rape)
-MS,1897,10,16,Wm. Williams,Franklin ,Blk,Male,Assaulted woman (rape)  
+MS,1897,10,16,Wm. Williams,Franklin ,Blk,Male,Assaulted woman (rape)
 MS,1906,10,5,Unnamed Negro,George ,Blk,Male,Attempted rape
 MS,1885,6,4,David T. Fairly,Greene ,Wht,Male,Murder
 MS,1927,5,25,Bernice Raspberry,Greene ,Blk,Male,Improper with woman
@@ -1959,7 +1959,7 @@ MS,1897,4,14,Jesse Evans,Hinds ,Blk,Male,Attempted assault (rape)
 MS,1899,12,23,James Martin,Hinds ,Blk,Male,Murder & attempted rape
 MS,1899,12,23,Charlie West,Hinds ,Blk,Male,Murder & attempted rape
 MS,1900,4,19,Henry McAfee,Hinds ,Blk,Male,Attempted rape
-MS,1901,3,20,Jody Bell,Hinds ,Blk,Male,Attm. criminal assault (rape)  
+MS,1901,3,20,Jody Bell,Hinds ,Blk,Male,Attm. criminal assault (rape)
 MS,1906,5,8,Tamp Sims,Hinds ,Blk,Male,Attempted murder
 MS,1912,12,17,Joe Beeman,Hinds ,Blk,Male,Murderous assault
 MS,1888,9,3,Wm. Lewis,Holmes ,Blk,Male,Unknown
@@ -1982,7 +1982,7 @@ MS,1883,8,1,D. W. Pressell,Issequena ,Wht,Male,Rape
 MS,1883,7,2,Martin Jones,Issequena ,Blk,Male,Murder
 MS,1886,1,31,Ebenezer Fowler,Issequena ,Blk,Male,Insulted white woman
 MS,1894,7,4,George Pond,Itawamba ,Blk,Male,Attempted rape
-MS,1895,3,27,Robert Bethain,Jackson ,Blk,Male,Arson    
+MS,1895,3,27,Robert Bethain,Jackson ,Blk,Male,Arson
 MS,1895,7,18,Andrew Thomas,Jackson ,Blk,Male,Rape
 MS,1899,6,21,Daniel Patrick,Jackson ,Wht,Male,Assaulted woman (rape)
 MS,1901,2,26,John Knox,Jackson ,Wht,Male,Murder
@@ -2043,7 +2043,7 @@ MS,1897,12,16,Thomas Waller,Lawrence ,Blk,Male,Murder
 MS,1899,10,20,Joseph Leflore,Leake ,Blk,Male,Murder & arson
 MS,1902,8,16,Charles Johnson,Leake ,Blk,Male,Assaulted woman (rape)
 MS,1888,6,19,— Davis,Lee ,Blk,Male,Attempted rape
-MS,1896,4,3,Harvey Mabry,Lee ,Blk,Male,Attempted rape             
+MS,1896,4,3,Harvey Mabry,Lee ,Blk,Male,Attempted rape
 MS,1886,8,31,Unnamed Negro,Leflore ,Blk,Male,Planning rape
 MS,1886,8,31,Unnamed Negro,Leflore ,Blk,Male,Planning rape
 MS,1886,8,31,Unnamed Negro,Leflore ,Blk,Male,Planning rape
@@ -2066,7 +2066,7 @@ MS,1895,6,27,Thomas Bowen,Lincoln ,Blk,Male,Rape
 MS,1903,12,20,Eli Hilson,Lincoln ,Blk,Male,Race prejudice
 MS,1903,12,27,Jesse Bagnets,Lincoln ,Blk,Male,Unknown
 MS,1908,1,2,"""Coot"" Autman",Lincoln ,Blk,Male,Murderous assault
-MS,1908,2,10,Eli Piggott,Lincoln ,Blk,Male,Criminal assault (rape)    
+MS,1908,2,10,Eli Piggott,Lincoln ,Blk,Male,Criminal assault (rape)
 MS,1928,6,29,James Bearden,Lincoln ,Blk,Male,Wounded men
 MS,1928,6,29,Stanley Bearden,Lincoln ,Blk,Male,Wounded men
 MS,1885,3,19,Jacob Doss,Lowndes ,Blk,Male,Murder
@@ -2101,7 +2101,7 @@ MS,1889,8,13,Keith Bowen,Monroe ,Blk,Male,Attempted assault (rape)
 MS,1890,9,11,Stephen Crump,Monroe ,Blk,Male,Rape
 MS,1890,9,11,George Boalter,Monroe ,Blk,Male,Rape
 MS,1893,9,14,Louise Carter,Monroe ,Blk,Fe,Accessory to murder
-MS,1893,9,14,Mahaley Jackson,Monroe ,Blk,Fe,Accessory to murder  
+MS,1893,9,14,Mahaley Jackson,Monroe ,Blk,Fe,Accessory to murder
 MS,1893,9,8,Benjamin Jackson,Monroe ,Blk,Male,Murder
 MS,1893,9,14,Rufus Broughs,Monroe ,Blk,Male,Accessory to murder
 MS,1896,4,13,John Jones,Monroe ,Blk,Male,Rape
@@ -2125,24 +2125,24 @@ MS,1900,5,13,Samuel Hinson,Neshoba ,Blk,Male,Assault
 MS,1901,8,29,Dick Hill,Neshoba ,Blk,Male,Murder
 MS,1893,9,8,Frank Smith,Newton ,Blk,Male,Criminal assault (rape)
 MS,1905,6,23,Pierce Mobley,Newton ,Blk,Male,Murder
-MS,1908,10,10,Dee Dawkins,Newton ,Blk,Male,Complicity in murder  
-MS,1908,10,10,Bill Fielder,Newton ,Blk,Male,Complicity in murder  
-MS,1908,10,10,Frank Johnson,Newton ,Blk,Male,Complicity in murder   
+MS,1908,10,10,Dee Dawkins,Newton ,Blk,Male,Complicity in murder
+MS,1908,10,10,Bill Fielder,Newton ,Blk,Male,Complicity in murder
+MS,1908,10,10,Frank Johnson,Newton ,Blk,Male,Complicity in murder
 MS,1908,10,31,Wm. Hodges,Newton ,Blk,Male,Attempted rape
 MS,1911,6,16,Wm. Bradford,Newton ,Blk,Male,Assault
-MS,1882,11,9,Unnamed Negro,Noxubee ,Blk,Male,Rape & murder 
+MS,1882,11,9,Unnamed Negro,Noxubee ,Blk,Male,Rape & murder
 MS,1897,12,31,James Jones,Noxubee ,Blk,Male,Arson
 MS,1899,4,6,Forest Jamison,Noxubee ,Blk,Male,Murder
 MS,1899,4,6,Mose Anderson,Noxubee ,Blk,Male,Murder
-MS,1901,2,18,Henry Fed,Noxubee ,Blk,Male,Arson        
-MS,1901,2,18,Ishman Fed,Noxubee ,Blk,Male,Arson         
+MS,1901,2,18,Henry Fed,Noxubee ,Blk,Male,Arson
+MS,1901,2,18,Ishman Fed,Noxubee ,Blk,Male,Arson
 MS,1912,5,6,George W. Edd,Noxubee ,Blk,Male,Murderous assault
-MS,1915,2,15,Horace Hill,Noxubee ,Blk,Male,Murder   
+MS,1915,2,15,Horace Hill,Noxubee ,Blk,Male,Murder
 MS,1927,5,20,Daniel Anderson,Noxubee ,Blk,Male,Murder
 MS,1929,5,11,Steve Jenkins,Noxubee ,Blk,Male,Murder
 MS,1884,7,13,Newton Carpenter,Oktibbeha ,Blk,Male,Poisoned boys
 MS,1884,7,13,Ned Mack,Oktibbeha ,Blk,Male,Poisoned boys
-MS,1896,6,27,John M. Outlaw,Oktibbeha ,Blk,Male,Breaking into woman's room 
+MS,1896,6,27,John M. Outlaw,Oktibbeha ,Blk,Male,Breaking into woman's room
 MS,1912,2,14,Mann Hamilton,Oktibbeha ,Blk,Male,Murderous assault
 MS,1912,4,2,Abe Coleman,Oktibbeha ,Blk,Male,Murderous assault
 MS,1882,6,21,Nathan Lacid,Panola ,Blk,Male,Rape
@@ -2205,7 +2205,7 @@ MS,1906,1,18,Unnamed Negro,Simpson ,Blk,Male,Attempted assault (rape)
 MS,1910,6,27,— Jones,Simpson ,Blk,Male,Murder
 MS,1888,8,17,Unnamed Negro,Smith ,Blk,Male,Murder
 MS,1888,8,17,Unnamed Negro,Smith ,Blk,Male,Murder
-MS,1897,7,9,Atticus Thompson,Smith ,Blk,Male,Criminal assault (rape)  
+MS,1897,7,9,Atticus Thompson,Smith ,Blk,Male,Criminal assault (rape)
 MS,1903,6,8,Unnamed Negro,Smith ,Blk,Fe,Murder
 MS,1903,6,8,Unnamed Negro,Smith ,Blk,Male,Murder
 MS,1903,6,8,Unnamed Negro,Smith ,Blk,Male,Murder
@@ -2285,9 +2285,9 @@ MS,1891,9,27,Grant White,Washington ,Blk,Male,Murder
 MS,1892,4,30,Unnamed Negro,Washington ,Blk,Male,Rape
 MS,1898,7,7,Wesley Gould,Washington ,Blk,Male,Mistaken identity
 MS,1900,3,27,Wm. Edwards  ,Washington ,Blk,Male,Murder
-MS,1901,7,11,Vincent Serio,Washington ,Wht,Male,Unknown    
-MS,1901,7,11,John Serio,Washington ,Wht,Male,Unknown       
-MS,1903,6,4,John Dennis,Washington ,Blk,Male,Assaulted woman (rape)   
+MS,1901,7,11,Vincent Serio,Washington ,Wht,Male,Unknown
+MS,1901,7,11,John Serio,Washington ,Wht,Male,Unknown
+MS,1903,6,4,John Dennis,Washington ,Blk,Male,Assaulted woman (rape)
 MS,1904,6,3,— Mayfield,Washington ,Blk,Male,Aiding murderer
 MS,1904,6,3,— Vanhorn,Washington ,Blk,Male,Murder
 MS,1905,3,5,Unnamed Negro,Washington ,Blk,Male,Murder
@@ -2349,14 +2349,14 @@ NC,1883,4,11,Unnamed Negro,Bertie ,Blk,Male,Attempted rape
 NC,1918,3,23,Peter Bazemore,Bertie ,Blk,Male,Criminal assault (rape)
 NC,1892,5,1,Lyman Purdie,Bladen ,Blk,Male,Murder
 NC,1891,9,25,Hezekiah Rankin,Buncombe,Blk,Male,Murder
-NC,1888,7,15,John Humprheys,Buncombe ,Blk,Male,Rape  
+NC,1888,7,15,John Humprheys,Buncombe ,Blk,Male,Rape
 NC,1889,9,11,Franklin Stack,Burke ,Wht,Male,Murder
 NC,1889,9,11,David Boone,Burke ,Blk,Male,Murder
 NC,1898,5,29,Thomas Johnson,Cabarrus ,Blk,Male,Rape & murder
 NC,1898,5,29,Joseph Kiser,Cabarrus ,Blk,Male,Rape & murder
 NC,1899,6,14,Lewis Patrick,Carteret ,Blk,Male,Murder
 NC,1885,10,3,Bud Mebane,Caswell ,Blk,Male,Rape & murder
-NC,1885,9,29,Harriet Finch,Chatham ,Blk,Fe,Murder 
+NC,1885,9,29,Harriet Finch,Chatham ,Blk,Fe,Murder
 NC,1885,9,29,Jerry Finch,Chatham ,Blk,Male,Murder
 NC,1885,9,29,John Pattisall,Chatham ,Blk,Male,Murder
 NC,1885,9,29,Lee Tyson,Chatham ,Blk,Male,Murder
@@ -2377,7 +2377,7 @@ NC,1889,9,6,John Sigmund,Gaston ,Blk,Male,Attempted rape
 NC,1929,9,14,Ella May Wiggins,Gaston ,Wht,Fe,Strike activity
 NC,1888,9,2,Alonzo Smith,Granville ,Blk,Male,Arson & burglary
 NC,1888,9,2,John Tanner,Granville ,Blk,Male,Murder
-NC,1888,9,2,Henry Tanner,Granville ,Blk,Male,Murder  
+NC,1888,9,2,Henry Tanner,Granville ,Blk,Male,Murder
 NC,1892,11,15,Carter Burnett,Granville ,Blk,Male,Assaulted girl (rape)
 NC,1916,4,5,Joseph Black,Greene ,Blk,Male,Making threats
 NC,1887,8,25,Eugene Hairston,Guilford ,Blk,Male,Assaulted woman (rape)
@@ -2407,7 +2407,7 @@ NC,1922,8,6,Bayner Blackwell,Onslow ,Blk,Male,Murder
 NC,1920,7,7,Edward Roach,Person ,Blk,Male,Attempted rape
 NC,1894,11,22,Dick Wofford,Polk ,Blk,Male,Assaulted girl (rape)
 NC,1883,9,20,Dockery Johnson,Richmond ,Blk,Male,Attempted rape
-NC,1885,12,18,John Lee,Richmond ,Wht,Male,Murder   
+NC,1885,12,18,John Lee,Richmond ,Wht,Male,Murder
 NC,1892,11,17,Duncan McPhatter,Richmond ,Blk,Male,Murder
 NC,1910,10,8,Unnamed Negro,Rockingham ,Blk,Male,Robbery
 NC,1883,11,8,Lawrence White,Rowan ,Blk,Male,Murder
@@ -2418,7 +2418,7 @@ NC,1906,8,6,Nease Gillespie,Rowan ,Blk,Male,Murder
 NC,1906,8,6,Jack Dillingham,Rowan ,Blk,Male,Murder
 NC,1900,8,28,Avery Mills,Rutherford ,Blk,Male,Murder
 NC,1891,9,6,Mack Best,Samson,Blk,Male,Attempted rape
-NC,1892,6,9,Alexander Whitley,Stanly ,Wht,Male,Murder        
+NC,1892,6,9,Alexander Whitley,Stanly ,Wht,Male,Murder
 NC,1892,9,12,Thomas N. Allison,Surry ,Wht,Male,Murder
 NC,1885,3,4,Lee Stratten,Union ,Blk,Male,Rape
 NC,1903,7,2,John Osborne,Union ,Blk,Male,Criminal assault (rape)
@@ -2478,8 +2478,8 @@ SC,1901,7,21,Wm. Cornish,Beaufort ,Blk,Male,Assaulted woman
 SC,1892,5,9,Edward Chisolm,Berkeley,Blk,Male,Injuring livestock
 SC,1904,7,11,Kitt Bookard,Berkeley ,Blk,Male,Quarrelling
 SC,1912,3,29,Joseph Brinson,Cherokee ,Blk,Male,Assault
-SC,1912,3,29,Frank Whisonant,Cherokee ,Blk,Male,Assault 
-SC,1888,9,29,Samuel Cornwell,Chester ,Blk,Male,Quarrel with white man     
+SC,1912,3,29,Frank Whisonant,Cherokee ,Blk,Male,Assault
+SC,1888,9,29,Samuel Cornwell,Chester ,Blk,Male,Quarrel with white man
 SC,1903,11,23,Jim Nelson,Chesterfield ,Blk,Male,Rape
 SC,1904,7,5,John Taylor,Chesterfield ,Blk,Male,Attempted rape
 SC,1913,2,23,Marion Cantri,Clarendon ,Blk,Male,Assault
@@ -2507,12 +2507,12 @@ SC,1886,12,1,Caesar Robinson,Florence ,Blk,Male,Attempted assault (rape)
 SC,1898,1,27,John Belin,Florence ,Blk,Male,Murder
 SC,1898,11,12,Sam Howard,Florence ,Blk,Male,Cohabitation
 SC,1909,1,8,Arthur Davis,Florence ,Blk,Male,Injured mule
-SC,1914,12,4,Wm. Green,Florence ,Blk,Male,Frightened women 
+SC,1914,12,4,Wm. Green,Florence ,Blk,Male,Frightened women
 SC,1922,1,4,Unnamed Negro,Florence ,Blk,Male,Intimate with white woman
 SC,1895,7,15,Ira Johnson,Greenville ,Blk,Male,Murder
 SC,1893,8,21,Jacob Davis,Greenwood ,Blk,Male,Rape
 SC,1893,12,6,Will Lawton,Greenwood ,Blk,Male,Murderous assault
-SC,1898,11,13,Eliza Goode,Greenwood ,Blk,Fe,Unknown 
+SC,1898,11,13,Eliza Goode,Greenwood ,Blk,Fe,Unknown
 SC,1898,11,9,Columbus Jackson,Greenwood ,Blk,Male,Murder
 SC,1898,11,9,Wade McKinney ,Greenwood ,Blk,Male,Murder
 SC,1898,11,9,Drayton Watts,Greenwood ,Blk,Male,Murder
@@ -2526,7 +2526,7 @@ SC,1906,8,16,Robert Davis,Greenwood ,Blk,Male,Attempted assault (rape)
 SC,1882,7,25,Martin Becket,Hampton ,Unk,Male,Assaulted girl (rape)
 SC,1886,3,8,Charles Brunson,Hampton ,Blk,Male,Assault
 SC,1890,2,24,Robert Pope,Hampton ,Wht,Male,Being of bad character
-SC,1890,2,24,Son of Robert Pope,Hampton ,Wht,Male,Being of bad character 
+SC,1890,2,24,Son of Robert Pope,Hampton ,Wht,Male,Being of bad character
 SC,1895,10,17,"Wm. Blake, Sr.",Hampton ,Blk,Male,Murder & robbery
 SC,1901,10,21,Unnamed Negro,Hampton ,Blk,Male,Burglary
 SC,1908,11,23,Jim Gilmore,Hampton ,Blk,Male,Attempted rape
@@ -2601,7 +2601,7 @@ TN,1889,12,11,Wm. Carden,Bradley,Wht,Male,Rape
 TN,1892,7,29,Andy Bashear,Campbell,Wht,Male,Rape
 TN,1892,7,29,Henry Willis,Campbell,Wht,Male,Rape
 TN,1893,3,19,Jesse Jones,Campbell,Wht,Male,Murder
-TN,1893,2,25,Joseph Payne,Campbell,Blk,Male,Assaulted girl (rape) 
+TN,1893,2,25,Joseph Payne,Campbell,Blk,Male,Assaulted girl (rape)
 TN,1894,2,11,Henry McCrary,Campbell,Blk,Male,Rape
 TN,1896,3,22,Wm. Murphy,Campbell,Wht,Male,Murder
 TN,1903,6,24,Charles Jones,Campbell,Blk,Male,Criminal assault (rape)
