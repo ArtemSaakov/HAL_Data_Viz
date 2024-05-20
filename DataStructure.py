@@ -1,4 +1,6 @@
 import csv
+import requests
+import json
 import pprint
 import datetime as dt
 import CensusData as cd

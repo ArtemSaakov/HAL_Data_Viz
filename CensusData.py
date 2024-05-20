@@ -32,7 +32,7 @@ class Counties:
     self.totalPopulation: the total population in the county from the census data
     """
 
-    def __init__(self, state, county, totalLynchings, medianIncome, blackPopulation, hispanicPopulation, whitePopulation, totalPopulation):
+    def __init__(self, state=None, county=None, totalLynchings=None, medianIncome=None, blackPopulation=None, hispanicPopulation=None, whitePopulation=None, totalPopulation=None):
         self.state = state
         self.county = county
         self.totalLynchings = totalLynchings
@@ -60,48 +60,31 @@ class CensusData:
         self.data = []
         self.cachefile = self.loadCache(cachefile)
 
-    def fetchCensus(self):
+    def fetchCensus(self, counties):
 
         """
-        Fetches the census tract for each district in the list of districts using the FCC API.
+        fetches census data fr each county in the data list.
 
-        This method iterates over the all districts in `self.districts`, retrieves the census tract
-        for each district based on its random latitude and longitude, and updates the district's
-        `censusTract` attribute.
-
-        Note
-        ----
-        The method fetches data from "https://geo.fcc.gov/api/census/area" and assumes that
-        `randomLat` and `randomLong` attributes of each district are already set.
-
-        The function `fetch` is an internal helper function that performs the actual API request.
-
-        In the api call, check if the response.status_code is 200.
-        If not, it might indicate the api call made is not correct, check your api call parameters.
-
-        If you get status_code 200 and other code alternativly, it could indicate the fcc webiste is not
-        stable. Using a while loop to make anther api request in fetch function, until you get the correct result.
-
-        Important
-        -----------
-        The order of the API call parameter has to follow the following.
-        'lat': xxx,'lon': xxx,'censusYear': xxx,'format': 'json' Or
-        'lat': xxx,'lon': xxx,'censusYear': xxx
 
         """
-        params = {'in': 'state:26', 'key': '', 'for': 'tract:*'}
-        resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B19013_001E', params=params)
-        if resp.status_code != 200:
-            print(f"Error: status_code {resp.status_code}")
-            return
-        resp = resp.json()
-        tract_to_income = {j[2]+j[3]: j[0] for j in resp}
-        for district in self.districts:
-            if int(tract_to_income.get(district.censusTract)) > 0 and tract_to_income.get(district.censusTract):
-                district.medIncome = int(tract_to_income.get(district.censusTract))
-            else:
-                district.medIncome = 0
-    def cacheData(self, fileName):
+        censusCallResponse =  {}
+        for state in counties.keys():
+            state = self._stateToFIPS(state)
+            params = {'in': f'state:{state}', 'key': 'f1d963997c02d4fc8721f64ff181dd2ade46245b', 'for': 'county:*'}
+            resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B01003_001E,B19013_001E,B03002_001E,B03002_003E,B03002_004E,B03002_012E', params=params)
+            if resp.status_code != 200:
+                print(f"Error: status_code {resp.status_code}")
+                return
+            censusCallResponse[state] = resp.json()
+        self.cacheData('data/censusCallResponse.json', censusCallResponse)
+
+
+    def _stateToFIPS(self, state):
+        with open('data/states.json', 'r') as f:
+            states = json.load(f)
+            return states[state]
+
+    def cacheData(self, fileName, data):
         """
         saves the current state of census data to a file in JSON format.
 
@@ -115,7 +98,7 @@ class CensusData:
         none
         """
         cacheList = []
-        for i in self.data:
+        for i in data:
             cacheList.append(i.__dict__)
         with open(fileName, 'w') as f:
             f.write(json.dumps(cacheList, indent=2))
@@ -123,6 +106,7 @@ class CensusData:
     def loadCache(self, fileName):
         """
         loads census data from a cache JSON file if it exists.
+        only works for
 
         parameters
         ------------------------------
