@@ -63,7 +63,7 @@ class CensusData:
     def fetchCensus(self, counties):
 
         """
-        fetches census data fr each county in the data list.
+        fetches census data for each county in the data list.
 
 
         """
@@ -76,11 +76,11 @@ class CensusData:
                 print(f"Error: status_code {resp.status_code}")
                 return
             censusCallResponse[state] = resp.json()
-        self.cacheData('data/censusCallResponse.json', censusCallResponse)
+        self.cacheData('data/censusCallResponse.json', [censusCallResponse])
 
 
     def _stateToFIPS(self, state):
-        with open('data/states.json', 'r') as f:
+        with open('data/stateCodeToFips.json', 'r') as f:
             states = json.load(f)
             return states[state]
 
@@ -91,17 +91,22 @@ class CensusData:
         parameters
         ------------------------------
         fileName: the name of the file where the district data will be saved.
+        data: the data to be saved. expects a list of dictionaries.
 
         returns
         ------------------------------
 
         none
         """
-        cacheList = []
-        for i in data:
-            cacheList.append(i.__dict__)
-        with open(fileName, 'w') as f:
-            f.write(json.dumps(cacheList, indent=2))
+        try:
+            cacheList = []
+            for i in data:
+                cacheList.append(i.__dict__)
+            with open(fileName, 'w') as f:
+                f.write(json.dumps(cacheList, indent=2))
+        except:
+            with open(fileName, 'w') as f:
+                f.write(json.dumps(data, indent=2))
 
     def loadCache(self, fileName):
         """
@@ -121,7 +126,7 @@ class CensusData:
         try:
             with open(fileName, 'r') as f:
                 d = json.load(f)
-                self.data = [CensusData(**i) for i in d]
+                self.data = [Counties(**i) for i in d]
                 return True
         except:
             return False

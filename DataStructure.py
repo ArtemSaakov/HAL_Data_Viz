@@ -1,9 +1,7 @@
 import csv
-import requests
-import json
 import pprint
 import datetime as dt
-import CensusData as cd
+from CensusData import CensusData as cd
 
 pp = pprint.PrettyPrinter(indent=2, sort_dicts=False, width=100)
 
@@ -216,7 +214,9 @@ class DataTree:
 if __name__ == '__main__':
     # pass
     tree = DataTree()
+    test = cd()
     tree.read_HAL_data("data/HAL_cleaned.csv")
+    # test.fetchCensus(tree.counties)
     pp.pprint(tree.counties)
     # filtered_data = tree.filter('state', 'AL')
     # for i in filtered_data:
