@@ -146,7 +146,7 @@ class DataTree:
 
     def _get_locations(self, node):
         """
-        a helper function to pull and collect each state and county as nodes
+        a helper function to collect, and count each state and county as nodes
         are being added to the data tree.
 
         parameters
@@ -159,10 +159,16 @@ class DataTree:
 
         none
         """
+        # check if the state is already in self.counties. add it if it is not, along with
+        # the county since it is the first one. start the count at 1 for the county
         if node.data.state and node.data.state not in self.counties.keys():
-            self.counties[node.data.state] = [node.data.county]
-        elif node.data.county and node.data.county not in self.counties[node.data.state]:
-            self.counties[node.data.state].append(node.data.county)
+            self.counties[node.data.state] = {node.data.county.strip(): 1}
+        # check if the county is already in the state. add it if it is not. start count at 1 for the county
+        elif node.data.county and node.data.county.strip() not in self.counties[node.data.state]:
+            self.counties[node.data.state] = {node.data.county.strip(): 1}
+        # increment the count for the county if it is already in the state
+        else:
+            self.counties[node.data.state][node.data.county.strip()] += 1
 
     def filter(self, attribute, value):
         """

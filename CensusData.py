@@ -44,18 +44,18 @@ class Counties:
 
 class CensusData:
     """
-        a class to manage the census data used for the project.
+    a class to manage the census data used for the project.
 
-        parameters
-        ------------------------------
+    parameters
+    ------------------------------
 
-        cachefile (optional): specify a file to pull cached data from
+    cachefile (optional): specify a file to pull cached data from
 
-        attributes
-        ------------------------------
+    attributes
+    ------------------------------
 
-        self.data: the data from the census API
-        """
+    self.data: the data from the census API
+    """
     def __init__(self, cachefile=None):
         self.data = []
         self.cachefile = self.loadCache(cachefile)
@@ -86,7 +86,8 @@ class CensusData:
 
     def cacheData(self, fileName, data):
         """
-        saves the current state of census data to a file in JSON format.
+        tries to save the current state of a class object's data to a file in JSON format.
+        otherwise saves data as is.
 
         parameters
         ------------------------------
