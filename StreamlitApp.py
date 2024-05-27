@@ -1,5 +1,9 @@
 from DataStructure import DataTree
 import streamlit as st
+import networkx as nx
+
+class Network:
+    pass
 
 def main():
     st.title('Historical American Lynching')
