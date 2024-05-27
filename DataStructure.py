@@ -55,16 +55,17 @@ class HALData:
 
     def __str__(self) -> str:
         return (
-                f"""
-                State: {self.state}
-                Date: {self.date}
-                Victim Name: {self.victimName}
-                County: {self.county}
-                Victim Race: {self.victimRace}
-                Victim Sex: {self.victimSex}
-                Alleged Offense: {self.allegedOffense}
-                """
-                )
+f"""
+State: {self.state}
+Date: {self.date}
+Victim Name: {self.victimName}
+County: {self.county}
+Victim Race: {self.victimRace}
+Victim Sex: {self.victimSex}
+Alleged Offense: {self.allegedOffense}
+"""
+)
+    __repr__ = __str__
 
 
 class Node:
@@ -219,13 +220,15 @@ class DataTree:
 if __name__ == '__main__':
     # pass
     tree = DataTree()
-    test = cd()
+    test = cd("data/censusDataCache.json")
     tree.read_HAL_data("data/HAL_cleaned.csv")
-    test.fetchCensus(tree.counties)
-    test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
+    # test.fetchCensus(tree.counties)
+    # test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
+    # test.cacheData("data/censusDataCache.json", test.data)
+    # test.loadCountiesCache("data/censusDataCache.json")
     # pp.pprint(tree.counties)
     for i in test.data:
-        pp.pprint(i.__dict__)
+        pp.pprint(i)
     # filtered_data = tree.filter('state', 'AL')
     # for i in filtered_data:
     #     pp.pprint(i.victimName)

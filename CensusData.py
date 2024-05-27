@@ -44,6 +44,23 @@ class Counties:
         self.totalPopulation = totalPopulation
         self.povertyLevel = povertyLevel
 
+    def __str__(self):
+        return  (
+f"""
+State: {self.state}
+County: {self.county}
+Total Lynchings: {self.totalLynchings}
+Median Income: {self.medianIncome}
+Black Population: {self.blackPopulation}
+Hispanic Population: {self.hispanicPopulation}
+White Population: {self.whitePopulation}
+Total Population: {self.totalPopulation}
+Population below poverty level: {self.povertyLevel}
+"""
+)
+    __repr__ = __str__
+
+
 class CensusData:
     """
     a class to manage the census data used for the project.
@@ -58,9 +75,10 @@ class CensusData:
 
     self.data: the data from the census API
     """
-    def __init__(self, cachefile=None):
+    def __init__(self, cacheFile=None):
         self.data = []
-        self.cachefile = self.loadCache(cachefile)
+        if cacheFile:
+            self.loadCountiesCache(cacheFile)
 
     def createCountyInstances(self, countyData, censusCallData):
         """
@@ -84,22 +102,29 @@ class CensusData:
                 stateFIPS = self._stateToFIPS(state)
                 countyFIPS = self._countyToFIPS(stateFIPS, county)
                 for i in censusCallData[stateFIPS]:
-                    if i[6] == countyFIPS:
-                        self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], totalPopulation=i[0], medianIncome=i[1], hispanicPopulation=i[2], whitePopulation=i[3], blackPopulation=i[4]), povertyLevel=i[5])
+                    if i[7] == countyFIPS:
+                        self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], totalPopulation=i[0], medianIncome=i[1], hispanicPopulation=i[4], whitePopulation=i[2], blackPopulation=i[3], povertyLevel=i[5]))
                         break
 
     def fetchCensus(self, counties):
-
         """
-        fetches census data for each county in the data list.
+        fetches census data for each county in each state in the data list, then caches it.
 
+        parameters
+        ------------------------------
 
+        counties: the data list to be used to fetch the census data.
+
+        returns
+        ------------------------------
+
+        none
         """
         censusCallResponse =  {}
         for state in counties.keys():
             state = self._stateToFIPS(state)
             params = {'in': f'state:{state}', 'key': 'f1d963997c02d4fc8721f64ff181dd2ade46245b', 'for': 'county:*'}
-            resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B01003_001E,B19013_001E,B03002_003E,B03002_004E,B03002_012E,B17001_002E', params=params)
+            resp = requests.get('https://api.census.gov/data/2022/acs/acs5?get=B01003_001E,B19013_001E,B03002_003E,B03002_004E,B03002_012E,B17001_002E', params=params)
             if resp.status_code != 200:
                 print(f"Error: status_code {resp.status_code}")
                 return
@@ -122,7 +147,7 @@ class CensusData:
     def cacheData(self, fileName, data):
         """
         tries to save the current state of a class object's data to a file in JSON format.
-        otherwise saves data as is.
+        otherwise dumps data in JSON format.
 
         parameters
         ------------------------------
@@ -144,10 +169,10 @@ class CensusData:
             with open(fileName, 'w') as f:
                 f.write(json.dumps(data, indent=2))
 
-    def loadCache(self, fileName):
+    def loadCountiesCache(self, fileName):
         """
         loads census data from a cache JSON file if it exists.
-        only works for
+        only works for class objects.
 
         parameters
         ------------------------------
