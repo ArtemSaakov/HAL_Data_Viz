@@ -222,8 +222,10 @@ if __name__ == '__main__':
     test = cd()
     tree.read_HAL_data("data/HAL_cleaned.csv")
     test.fetchCensus(tree.counties)
-    # test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
+    test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
     # pp.pprint(tree.counties)
+    for i in test.data:
+        pp.pprint(i.__dict__)
     # filtered_data = tree.filter('state', 'AL')
     # for i in filtered_data:
     #     pp.pprint(i.victimName)

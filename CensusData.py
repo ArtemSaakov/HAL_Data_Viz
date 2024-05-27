@@ -33,7 +33,7 @@ class Counties:
     self.totalPopulation: the total population in the county from the census data
     """
 
-    def __init__(self, state=None, county=None, totalLynchings=None, medianIncome=None, blackPopulation=None, hispanicPopulation=None, whitePopulation=None, totalPopulation=None):
+    def __init__(self, state=None, county=None, totalLynchings=None, medianIncome=None, blackPopulation=None, hispanicPopulation=None, whitePopulation=None, totalPopulation=None, povertyLevel=None):
         self.state = state
         self.county = county
         self.totalLynchings = totalLynchings
@@ -42,6 +42,7 @@ class Counties:
         self.hispanicPopulation = hispanicPopulation
         self.whitePopulation = whitePopulation
         self.totalPopulation = totalPopulation
+        self.povertyLevel = povertyLevel
 
 class CensusData:
     """
@@ -61,33 +62,31 @@ class CensusData:
         self.data = []
         self.cachefile = self.loadCache(cachefile)
 
-    # def createCountyInstances(self, countyData, censusCallData):
-    #     """
-    #     creates an instance of the Counties class for each county in the data list.
+    def createCountyInstances(self, countyData, censusCallData):
+        """
+        creates an instance of the Counties class for each county in the data list.
 
-    #     parameters
-    #     ------------------------------
+        parameters
+        ------------------------------
 
-    #     countyData: the data list to be used to create the instances.
+        countyData: the data list to be used to create the instances.
 
-    #     returns
-    #     ------------------------------
+        returns
+        ------------------------------
 
-    #     none
-    #     """
-    #     with open(censusCallData, 'r') as f:
-    #         censusCallData = json.load(f)
+        none
+        """
+        with open(censusCallData, 'r') as f:
+            censusCallData = json.load(f)[0]
 
-    #     for state in countyData.keys():
-    #         for county in countyData[state]:
-    #             stateFIPS = self._stateToFIPS(state)
-    #             countyFIPS = self._countyToFIPS(stateFIPS, county)
-    #             for i in censusCallData[stateFIPS]:
-    #                 if i[7] == countyFIPS:
-    #                     self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], totalPopulation=i[0], medianIncome=i[1], hispanicPopulation=i[2], whitePopulation=i[3], blackPopulation=i[4], )
-
-
-    #             self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], ))
+        for state in countyData.keys():
+            for county in countyData[state]:
+                stateFIPS = self._stateToFIPS(state)
+                countyFIPS = self._countyToFIPS(stateFIPS, county)
+                for i in censusCallData[stateFIPS]:
+                    if i[6] == countyFIPS:
+                        self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], totalPopulation=i[0], medianIncome=i[1], hispanicPopulation=i[2], whitePopulation=i[3], blackPopulation=i[4]), povertyLevel=i[5])
+                        break
 
     def fetchCensus(self, counties):
 
@@ -100,7 +99,7 @@ class CensusData:
         for state in counties.keys():
             state = self._stateToFIPS(state)
             params = {'in': f'state:{state}', 'key': 'f1d963997c02d4fc8721f64ff181dd2ade46245b', 'for': 'county:*'}
-            resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B01003_001E,B19013_001E,B03002_003E,B03002_004E,B03002_012E', params=params)
+            resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B01003_001E,B19013_001E,B03002_003E,B03002_004E,B03002_012E,B17001_002E', params=params)
             if resp.status_code != 200:
                 print(f"Error: status_code {resp.status_code}")
                 return
