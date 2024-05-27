@@ -1,5 +1,6 @@
 import requests
 import json
+import csv
 
 class Counties:
     """
@@ -60,6 +61,34 @@ class CensusData:
         self.data = []
         self.cachefile = self.loadCache(cachefile)
 
+    # def createCountyInstances(self, countyData, censusCallData):
+    #     """
+    #     creates an instance of the Counties class for each county in the data list.
+
+    #     parameters
+    #     ------------------------------
+
+    #     countyData: the data list to be used to create the instances.
+
+    #     returns
+    #     ------------------------------
+
+    #     none
+    #     """
+    #     with open(censusCallData, 'r') as f:
+    #         censusCallData = json.load(f)
+
+    #     for state in countyData.keys():
+    #         for county in countyData[state]:
+    #             stateFIPS = self._stateToFIPS(state)
+    #             countyFIPS = self._countyToFIPS(stateFIPS, county)
+    #             for i in censusCallData[stateFIPS]:
+    #                 if i[7] == countyFIPS:
+    #                     self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], totalPopulation=i[0], medianIncome=i[1], hispanicPopulation=i[2], whitePopulation=i[3], blackPopulation=i[4], )
+
+
+    #             self.data.append(Counties(state=state, county=county, totalLynchings=countyData[state][county], ))
+
     def fetchCensus(self, counties):
 
         """
@@ -71,7 +100,7 @@ class CensusData:
         for state in counties.keys():
             state = self._stateToFIPS(state)
             params = {'in': f'state:{state}', 'key': 'f1d963997c02d4fc8721f64ff181dd2ade46245b', 'for': 'county:*'}
-            resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B01003_001E,B19013_001E,B03002_001E,B03002_003E,B03002_004E,B03002_012E', params=params)
+            resp = requests.get('https://api.census.gov/data/2018/acs/acs5?get=B01003_001E,B19013_001E,B03002_003E,B03002_004E,B03002_012E', params=params)
             if resp.status_code != 200:
                 print(f"Error: status_code {resp.status_code}")
                 return
@@ -83,6 +112,13 @@ class CensusData:
         with open('data/stateCodeToFips.json', 'r') as f:
             states = json.load(f)
             return states[state]
+
+    def _countyToFIPS(self, state, county):
+        with open('data/US_FIPS_Codes.csv', 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for line in reader:
+                if line['FIPS State'] == state and line['County Name'] == county:
+                    return line['FIPS County']
 
     def cacheData(self, fileName, data):
         """

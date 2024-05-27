@@ -109,7 +109,7 @@ class DataTree:
             None
             """
             node = Node(data)
-
+            self._get_locations(node)
             if self.root == None:
                 self.root = node
             else:
@@ -132,7 +132,6 @@ class DataTree:
 
         None
         """
-        self._get_locations(curNode)
         if curNode.data.date > newNode.data.date:
             if curNode.leftChild == None:
                 curNode.leftChild = newNode
@@ -165,7 +164,7 @@ class DataTree:
             self.counties[node.data.state] = {node.data.county.strip(): 1}
         # check if the county is already in the state. add it if it is not. start count at 1 for the county
         elif node.data.county and node.data.county.strip() not in self.counties[node.data.state]:
-            self.counties[node.data.state] = {node.data.county.strip(): 1}
+            self.counties[node.data.state].update({node.data.county.strip(): 1})
         # increment the count for the county if it is already in the state
         else:
             self.counties[node.data.state][node.data.county.strip()] += 1
@@ -222,8 +221,9 @@ if __name__ == '__main__':
     tree = DataTree()
     test = cd()
     tree.read_HAL_data("data/HAL_cleaned.csv")
-    # test.fetchCensus(tree.counties)
-    pp.pprint(tree.counties)
+    test.fetchCensus(tree.counties)
+    # test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
+    # pp.pprint(tree.counties)
     # filtered_data = tree.filter('state', 'AL')
     # for i in filtered_data:
     #     pp.pprint(i.victimName)
