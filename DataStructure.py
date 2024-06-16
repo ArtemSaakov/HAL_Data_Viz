@@ -218,17 +218,17 @@ class DataTree:
                 self.insert_node(newData)
 
 if __name__ == '__main__':
-    # pass
-    tree = DataTree()
-    test = cd("data/censusDataCache.json")
-    tree.read_HAL_data("data/HAL_cleaned.csv")
-    # test.fetchCensus(tree.counties)
-    # test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
-    # test.cacheData("data/censusDataCache.json", test.data)
-    # test.loadCountiesCache("data/censusDataCache.json")
-    # pp.pprint(tree.counties)
-    for i in test.data:
-        pp.pprint(i)
-    # filtered_data = tree.filter('state', 'AL')
-    # for i in filtered_data:
-    #     pp.pprint(i.victimName)
+    pass
+    # tree = DataTree()
+    # test = cd("data/censusDataCache.json")
+    # tree.read_HAL_data("data/HAL_cleaned.csv")
+    # # test.fetchCensus(tree.counties)
+    # # test.createCountyInstances(tree.counties, "data/censusCallResponse.json")
+    # # test.cacheData("data/censusDataCache.json", test.data)
+    # # test.loadCountiesCache("data/censusDataCache.json")
+    # # pp.pprint(tree.counties)
+    # for i in test.data:
+    #     pp.pprint(i)
+    # # filtered_data = tree.filter('state', 'AL')
+    # # for i in filtered_data:
+    # #     pp.pprint(i.victimName)
